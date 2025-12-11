@@ -45,13 +45,7 @@ Execute the main game script from your terminal:
 
 ```bash
 python shooter_game.py
- 
----
-
-### 2. Controls and Control Flow States Block
-
-```markdown
-## 🕹️ Controls
+ ## 🕹️ Controls
 
 | Key | Action |
 | :--- | :--- |
@@ -59,7 +53,9 @@ python shooter_game.py
 | **Right Arrow** | Move player right |
 | **Spacebar** | Fire player bullet |
 
+
 ---
+
 
 ## 🚦 Control Flow States (The Main Blocks)
 
@@ -70,3 +66,24 @@ The game uses a state machine to determine which actions are permitted in the ma
 | **RUNNING** | 1 | Standard combat phase. | Player Movement/Shooting, Enemy/Boss Movement/Shooting, Collision Checks. |
 | **BOSS\_ENGAGE** | 3 | Transition state when the Boss spawns. | **Only** Boss Descent Movement. All player/enemy actions are paused. |
 | **GAME\_OVER** | 2 | End state after the player is hit. | Drawing 'GAME OVER' message. (All game action is blocked.) |
+
+
+---
+
+
+## 🎯 Gameplay Mechanics
+
+* Score 1 point for every regular enemy destroyed.
+* Upon reaching **15 points**, the game transitions to the **BOSS\_ENGAGE** state.
+* Hitting the Boss reduces its health. Defeating the Boss awards bonus points and resets the state to **RUNNING** with regular enemies.
+* Collision with any enemy (or boss projectile) results in **Game Over**.
+
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests for feature improvements, bug fixes, or better graphics.
+
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
