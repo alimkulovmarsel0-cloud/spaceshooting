@@ -21,8 +21,8 @@ You must have **Python 3.x** installed on your system.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/YourUsername/your-shooter-game.git](https://github.com/YourUsername/your-shooter-game.git)
-    cd your-shooter-game
+    git clone https://github.com//alimkulovmarsel0-cloud/spaceshooting.git
+    cd spaceshooting
     ```
 
 2.  **Install Pygame:**
@@ -44,8 +44,10 @@ You must have **Python 3.x** installed on your system.
 Execute the main game script from your terminal:
 
 ```bash
-python shooter_game.py
- ## 🕹️ Controls
+python main.py
+```
+
+## 🕹️ Controls
 
 | Key | Action |
 | :--- | :--- |
