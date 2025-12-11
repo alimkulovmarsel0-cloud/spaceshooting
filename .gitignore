@@ -1,0 +1,50 @@
+
+# -------------------------------------------------------------------
+# Python-specific files and directories
+# -------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environments
+.venv/
+venv/
+env/
+/bin/
+/lib/
+/include/
+
+# IDE/Editor files (VS Code, Pycharm, etc.)
+.vscode/
+.idea/
+*.swp
+*~
+
+# -------------------------------------------------------------------
+# Pygame and Project Specific
+# -------------------------------------------------------------------
+# Any specific saved game data or log files
+*.log
+saves/
+# If you created a virtual environment named 'pygame_env'
+pygame_env/
+
+# Uploaded assets (though typically you'd commit these)
+# If you don't want to commit the assets folder, uncomment the next line:
+# assets/
+
+# -------------------------------------------------------------------
+# Operating System Files
+# -------------------------------------------------------------------
+.DS_Store # macOS
+Thumbs.db # Windows
